@@ -29,6 +29,7 @@ export const LoginCard = () => {
         }
     }
 
+    /*
     function handleGoogleAuth() {
         const rootUrl = "https://accounts.google.com/o/oauth2/v2/auth";
         const options = {
@@ -46,6 +47,7 @@ export const LoginCard = () => {
         const qs = new URLSearchParams(options);
         window.location.assign(`${rootUrl}?${qs.toString()}`)
     }
+    */
 
     return (
         <div className="right-login">
@@ -61,15 +63,19 @@ export const LoginCard = () => {
                     <span style={{ margin: '0 8px', color: 'gray', fontSize: '11.5px', fontWeight: 'bold' }}>OR</span>
                     <div style={{ backgroundColor: '#cac7c7', height: '1px', width: '120px' }}></div>
                 </div>
-                <Link to="/forgot" style={{ marginTop: '25px', color: 'gray', fontSize: '13.15px', textDecoration: 'none' }}>Forgotten your password ?</Link>
+                <p style={{ color: 'gray', fontSize: '14px' }}>Don't have an account?<Link to="/signup" style={{ color: '#2196f3', fontWeight: 'bold', marginLeft: '6px', textDecoration: 'none', fontSize: '13.25px' }}>Sign up</Link></p>
+                {/*
                 <button onClick={() => handleGoogleAuth()} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: '9px 10px', marginTop: '18px', borderRadius: '5px', backgroundColor: '#ffff', color: 'gray', border: '1px solid #e9e9e9' }}>
                     <img src={googleicon} style={{ width: '20px', }} alt="" />
                     <p style={{ marginLeft: '8px', fontSize: '14px' }}> Continue with Google</p>
                 </button>
+                */}
             </div>
+            {/*
             <div className="signup-action-box border" style={{ textAlign: 'center' }}>
                 <p style={{ color: 'gray', fontSize: '14px' }}>Don't have an account?<Link to="/signup" style={{ color: '#2196f3', fontWeight: 'bold', marginLeft: '6px', textDecoration: 'none', fontSize: '13.25px' }}>Sign up</Link></p>
             </div>
+            */}
         </div>
     )
 }

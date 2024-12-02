@@ -6,6 +6,13 @@ body {
   position: relative !important;
   height: 100vh;
   width: 100vw;
+  background-image: url('https://i0.wp.com/onaircode.com/wp-content/uploads/2019/09/simple-pattern-css.jpg?resize=1024%2C580&ssl=1'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0; /* Ensure no default browser margin */
+  padding: 0; /* Ensure no default padding */
 }
 
 .width60 {
@@ -40,7 +47,6 @@ button {
   flex-direction: column;
 }
 
-
 .align {
   align-items: center;
 }
@@ -62,10 +68,6 @@ a {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background-color: #FAFAFA;
 }
 
 *::-webkit-scrollbar {
@@ -119,7 +121,6 @@ body {
   align-items: center;
   padding-top: 22px;
   margin-top: -3.8vh;
-
 }
 
 .forgot-box {
@@ -132,7 +133,6 @@ body {
   margin-top: 14px;
   padding-top: 22px;
   position: relative;
-
 }
 
 .separate {

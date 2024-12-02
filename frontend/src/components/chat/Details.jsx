@@ -25,7 +25,7 @@ export default function Details({ handleDetailsToggle, roomId, handleLeaveChat }
                     <svg aria-label="Navigate back to chat from thread details" className="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.001.504a11.5 11.5 0 1 0 11.5 11.5 11.513 11.513 0 0 0-11.5-11.5Zm-.182 5.955a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Zm1.614 11.318h-2.865a1 1 0 0 1 0-2H11V12.05h-.432a1 1 0 0 1 0-2H12a1 1 0 0 1 1 1v4.727h.433a1 1 0 1 1 0 2Z"></path></svg>
                 </div>
             </div>
-            <div className="memebers" style={{ padding: '0 15px', borderBottom: '1px solid #dbdbdb' }}>
+            <div className="members" style={{ padding: '0 15px', borderBottom: '1px solid #dbdbdb' }}>
                 <p style={{ marginLeft: '10px', fontSize: '15.5px', marginTop: '18px', marginBottom: '8px' }}>Members</p>
                 {
                     people.map(userId => <UserCardDetails showOnline={true} key={userId} uid={userId} />)

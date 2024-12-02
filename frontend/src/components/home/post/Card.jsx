@@ -251,7 +251,7 @@ export default function Card({ img, likes, caption, time, comments, userId, id, 
                     </button>
                 </div>
                 <div className="likes-count" style={{ marginTop: '9px' }}>
-                    <p style={{ fontWeight: 'bold', fontSize: '13.15px', marginLeft: '9.2px' }}>{likesCount} likes</p>
+                    <p style={{ fontWeight: 'bold', fontSize: '13.15px', marginLeft: '9.2px' }}>{likesCount} upvotes</p>
                 </div>
                 <div className="caption" style={{ display: 'flex', flexDirection: 'row', alignItems: "center", marginTop: '8px' }}>
                     <Link to={user?.username} style={{ fontWeight: 'bold', fontSize: '13.65px', marginLeft: '9px' }}>{user?.username}</Link>

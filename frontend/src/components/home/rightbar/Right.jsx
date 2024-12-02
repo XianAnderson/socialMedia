@@ -75,15 +75,15 @@ export default function Right() {
             <div className="my-acc" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div className="img" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                     <Link to={`/${auth?.username}`} style={{ position: 'relative' }}><img src={auth?.avatar ? auth.avatar : defaultImg} style={{ minWidth: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover', }} alt="" /></Link>
-                    <input onChange={e => handleStoryUpload(e)} type="file" id="story_up" hidden />
-                    <label htmlFor="story_up" title="Add new story" style={{ position: 'relative', top: '15px', left: '-12px', backgroundColor: '#0095F6', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', padding: '2px', cursor: 'pointer' }}><AddIcon sx={{ fontSize: '16px', color: 'white' }} /></label>
+                    {/*<input onChange={e => handleStoryUpload(e)} type="file" id="story_up" hidden />*/}
+                    {/*<label htmlFor="story_up" title="Add new story" style={{ position: 'relative', top: '15px', left: '-12px', backgroundColor: '#0095F6', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', padding: '2px', cursor: 'pointer' }}><AddIcon sx={{ fontSize: '16px', color: 'white' }} /></label>*/}
                     <div className="name" style={{ display: 'flex', flexDirection: 'column', marginLeft: '18px' }}>
                         <Link to={`/${auth?.username}`} style={{ color: 'black', fontSize: '14.75px', fontWeight: 'bold' }}>{auth?.username}</Link>
                         <Link to={`/${auth?.username}`} style={{ color: 'gray', fontSize: '14.35px', marginTop: '4.5px' }}>{auth?.name}</Link>
                     </div>
                 </div>
                 <div className="switch">
-                    <p style={{ color: '#0095F6', fontSize: '14.55px' }}>Switch</p>
+                    <p style={{ color: '#0095F6', fontSize: '14.55px' }}></p>
                 </div>
             </div>
             <div className="suggestions" style={{ marginTop: '28px' }}>
